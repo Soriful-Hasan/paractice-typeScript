@@ -1,3 +1,4 @@
+//? Y=undefined dewar karon Y holo optional Generic Type
 interface Developer<T, Y = undefined> {
   name: T;
   age: number;
