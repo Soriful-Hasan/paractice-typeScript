@@ -17,3 +17,13 @@ type User = {
 type CopyUser = {
   [K in keyof User]: User[K];
 };
+
+type Area<T> = {
+  [k in keyof T]: T[k];
+};
+
+// example
+const area1: Area<{ height: string; width: boolean }> = {
+  height: "100M",
+  width: true,
+};

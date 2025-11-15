@@ -1,5 +1,13 @@
 //? if string behavior type . then we can call string lateral type
+/*
+keyof = object type এর সব key–এর union
 
+এটি শুধু property নাম নিয়ে কাজ করে, value না
+
+এটি generics + mapped types–এ সবচেয়ে powerful জিনিসগুলোর একটি
+
+এটি ছাড়া type-safe dynamic programming করা সম্ভব না
+*/
 type ReachPeople = {
   car: string;
   bike: string;
