@@ -9,18 +9,21 @@ class BankAccount {
     this.balance = balance;
   }
 
-  addBalance(newBalance: number) {
+  //   addBalance(newBalance: number) {
+  //     this.balance = this.balance + newBalance;
+  //   }
+  set setBalance(newBalance: number) {
     this.balance = this.balance + newBalance;
   }
-}
 
-class subBankAccount extends BankAccount {
-  getBalance() {
-    this.accountId;
+  get getBalance() {
+    return this.balance;
   }
 }
 
 const sorifulBank = new BankAccount(2222, "sofiful hasan", 4000);
-sorifulBank.addBalance(100);
+// sorifulBank.addBalance(100);
+sorifulBank.setBalance = 100;
+console.log("this is your account balance", sorifulBank.getBalance);
 sorifulBank.accountName = "jahidul";
 console.log(sorifulBank);
